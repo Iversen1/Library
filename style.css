@@ -18,13 +18,26 @@ header {
 #wrapper {
     width: 75%;
     margin: 0 auto;
+    border-top: solid 1.5px rgba(0,0,0,0.1);
+    margin-top: 20px;
 }
 
 #input {
     flex-direction: column;
     margin:auto;
     padding-bottom: 10px;
-    padding-top: 20px;    
+    padding-top: 20px;
+}
+.user-input {
+    margin-right: 10px;
+    border: 0;
+    background-color: #f2f8f9;
+    text-align: center;
+    padding: 5px;   
+}
+label {
+    font-size: 13.3333px;
+    font-family: Arial;
 }
 
 #read {
@@ -32,6 +45,19 @@ header {
     text-align: center;
     padding-top: 20px;
 }
+
+/*Radio buttons*/
+.read {
+    opacity: 0;
+}
+
+label {
+    cursor: pointer;
+}
+input:checked + label {
+    color: green;
+}
+
 #books {
     margin-top: 30px;
     padding-top: 20px;
@@ -77,15 +103,6 @@ h5, p, #delete-button {
 
 }
 
-p, #delete-button {
-  
-    
-}
-
-.card {
-
-}
-
 #delete-button {
     padding: 0;
     border: 0;
@@ -98,6 +115,10 @@ p, #delete-button {
     padding: 0;
     border: 0;
     background-color: white;
+}
+
+#submit:hover {
+    text-decoration: underline;
 }
 
 #delete-button:hover {
