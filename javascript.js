@@ -1,4 +1,5 @@
-// Start ved nr 7, local storage
+// 1. make the toggle function
+
 
 let myLibrary =[];
 
