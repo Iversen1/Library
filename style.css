@@ -58,7 +58,7 @@ input:checked + label {
     color: green;
 }
 
-#books {
+#books, #key{
     margin-top: 30px;
     padding-top: 20px;
     display: flex;
@@ -68,7 +68,7 @@ input:checked + label {
     flex-wrap: wrap;
    }
 
-#each-book{
+#each-book, #key{
     display: flex;
     margin-top: 10px;
     flex-direction: column;
@@ -85,6 +85,21 @@ input:checked + label {
     max-width: 200px;
     background-color: #f2f8f9;
 }
+
+#read-checkbox {
+    opacity: ;
+}
+
+/*inside eachbook*/
+#read-checkbox {
+    cursor: pointer;
+}
+
+input:checked + #read-checkbox {
+    color: green;
+}
+
+
 
 #each-book:hover {
     background-color: white;
@@ -124,3 +139,5 @@ h5, p, #delete-button {
 #delete-button:hover {
     font-weight: 900;
 }
+
+
