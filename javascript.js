@@ -17,9 +17,9 @@ Book.prototype.info = function() {
 
 Book.prototype.toggleRead = function(str) {
    if ( str === "Yes") {
-       this.read === "Yes"
-   } else {
-       this.read === "No"
+       this.read === true;
+   } else if (str === "No") {
+       this.read === false;
    }
 }
 
@@ -129,41 +129,40 @@ function addBookToLibrary() {
  //should change the testToggle
 // Only works on the first book, the next books doesnt function
         cardToggle.addEventListener('click', function testing(event) {
-            if(event.target.id === "read-checkbox") {
-                if(cardToggle.checked) 
+           
+                if(this.checked) 
         { for( let i = 0; i < myLibrary.length; i++) {
             if ( cardTitle.innerText === myLibrary[i].title)
-            { myLibrary[i].toggleRead("yes")
+            {   myLibrary[i].read  = "yes";
                 console.log("found it" + myLibrary[i].title )
                 cardRead.style.color = "green";
             } 
+            else {myLibrary[i].read = "No";
+        }
          } 
             }
             else {console.log("not found")
             cardRead.style.color = "red"}
-        }
+            
+           
+        
         })
     }
     
  
-
-   
-    
            
-    // cardToggle.addEventListener('click', function testing(event) {
-           
-    //     if(cardToggle.checked) {
+    // cardToggle.addEventListener('click', function testing(event) {   
+    //     if(this.checked) {
                          
     //                     console.log("found it")
     //                      cardRead.style.color = "green";
         
     // }    else {console.log("not found")
-    // card.style.color = "red"}
+    //          this.style.color = "red"}
 
     
     // })
-
-
+ 
 
 
 
